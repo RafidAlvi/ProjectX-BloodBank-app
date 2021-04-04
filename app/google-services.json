@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "560644370771",
+    "firebase_url": "https://projectx-blood-bank-default-rtdb.firebaseio.com",
+    "project_id": "projectx-blood-bank",
+    "storage_bucket": "projectx-blood-bank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560644370771:android:85ddbba3804f0243dfb1a6",
+        "android_client_info": {
+          "package_name": "com.rafidalvi.projectxbloodbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560644370771-i6nj4ief1u09bfhdujt64agc6an8290t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rafidalvi.projectxbloodbank",
+            "certificate_hash": "0e358b2d38b7b0aed7552caa0e995d2ceff8e70c"
+          }
+        },
+        {
+          "client_id": "560644370771-jj8ehcu9scs94akpn7p9co2a6glt7icp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIGaVvE-JKxU548Gbt3yAsf8UeOwjfMpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560644370771-jj8ehcu9scs94akpn7p9co2a6glt7icp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

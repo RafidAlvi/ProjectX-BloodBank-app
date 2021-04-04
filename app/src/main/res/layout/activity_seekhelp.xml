@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeekhelpActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time Date"
+        android:textSize="20dp"
+        android:gravity="right"
+        android:padding="5dp"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/timetable"
+
+        >
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SeekHelp"
+        android:textSize="30dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="sans-serif-thin"
+        android:id="@+id/titleTV"
+
+        >
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible"
+        android:id="@+id/seekingLayout"
+
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/nameSeekED"
+            android:padding="5dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:editable="false"
+
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/phnSeekED"
+            android:padding="5dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:editable="false"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Patient's Address"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/adrssSeekED"
+            android:padding="5dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Type:"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                >
+
+            </TextView>
+            <Spinner
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/greybutton"
+                android:entries="@array/BloodType"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:id="@+id/bloodtypeProSPseek"
+
+
+
+
+
+                >
+
+            </Spinner>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Patient's Age"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/ageSeekED"
+                android:padding="5dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    >
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notes(Date/Requirements)"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/noteSeekED"
+            android:padding="5dp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="2"
+                >
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/redblooadbg"
+            android:text="Seek help"
+            android:layout_margin="10dp"
+            android:id="@+id/seekBt"
+
+            >
+
+        </Button>
+
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/greybutton"
+
+        android:visibility="visible"
+
+        android:id="@+id/pendingLayout"
+        android:padding="5dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/greybutton"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+
+
+            android:padding="10dp"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posted at: "
+                android:textSize="15dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/postTime"
+
+
+                >
+
+            </TextView>
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:src="@drawable/blooddrop"
+                android:layout_below="@+id/postTime"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/blooddropimg"
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Phone Number"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:drawableLeft="@android:drawable/ic_menu_call"
+                android:layout_below="@id/blooddropimg"
+                android:id="@+id/pendingPhn"
+
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/postTime"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:text="XY+"
+                android:id="@+id/pendingBloodtype"
+
+                >
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    android:id="@+id/pendingName"
+
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textSize="15dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/pendingAge"
+
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="20dp"
+                    android:minLines="2"
+                    android:layout_margin="5dp"
+                    android:id="@+id/pendingAddress"
+
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Note"
+                    android:textSize="25dp"
+                    android:layout_margin="5dp"
+                    android:minLines="2"
+                    android:textStyle="bold"
+                    android:gravity="bottom"
+
+                    android:id="@+id/pendingNotes"
+
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accepted By:"
+                    android:padding="10dp"
+                    android:id="@+id/accepterTV"
+                    >
+
+                </TextView>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/redblooadbg"
+            android:text="Request Done"
+            android:visibility="visible"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/doneBt"
+
+            >
+
+        </Button>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
